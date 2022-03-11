@@ -1,0 +1,636 @@
+/*
+
+  Theme Name: Raqameyyah
+  Theme URL: http://www.raqameyyah.co
+  Author: Raqameyyah
+  Description: هذا القالب ملك لموقع رقمية فقط . 
+
+*/
+/*
+ * Droid Arabic Kufi (Arabic) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family:jazeera;
+    src:url(./font/Al-Jazeera-Arabic-Bold.ttf) format("truetype");
+}
+html,
+body {
+  margin: 0;
+  color: #333;
+  background: #fff;
+  font: sans-serif,poppins;
+}
+* {
+    margin:0;
+    padding:0;
+}
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;-moz-transition: all .3s;}
+/* الهيدر ككل */
+header {
+    font-family: jazeera,poppins;
+}
+/* القائمة العليا */
+.top {
+    background: #eee;
+    min-height: 36px;
+}
+.email h3 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 25px;
+    color: #666;
+}
+.email {
+    float: left;
+}
+.top .col-sm-6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    text-align: right;
+}
+.top ul.social {
+    display: inline-block;
+    margin: 0;
+}
+.top ul.social li {
+    padding: 0!important;
+}
+.top ul.social a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    position: relative;
+    color: #fff;
+    background-color: #43afef;
+    border-radius: 2px 2px 2px 2px;
+    overflow: hidden;
+    text-align: center;
+	font-weight: 100;
+}
+.Info {
+    text-align: left;
+    padding: 20px 0;
+}
+.Info .container>div {
+    display: inline-block;
+    margin-left: 50px;
+    text-align: left;
+    font-family: jazeera;
+}
+.Info .container>div>div {
+    display: inline-block;
+}
+.Info .container>div h3 {
+    font-size: 23px;
+    margin-top: 0;
+}
+.Info .container>div p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 12px!important;
+}
+.open-menu {
+    display: none;
+}
+nav {
+    height: 70px;
+    line-height: 70px;
+    background: #43afef;
+    z-index: 9991;
+    position: relative;
+    padding: 0;
+    border-bottom: none!important;
+}
+.logo {
+    float: right;
+}
+nav .logo img {
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+    width: 190px;
+}
+#navbar-main li {
+    float: right;
+}
+#navbar-main a {
+    line-height: 40px;
+    color: #fff;
+    font-family: jazeera;
+}
+#navbar-main a:hover {
+    color: #43afef;
+    background: #fff;
+}
+nav.isFixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+/* الهيدر */
+.Header {
+    height: 580px;
+    text-align: right;
+    position: relative;
+    background: url(./img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-content {
+    margin-top: 150px;
+    display: block;
+    text-align: center;
+}
+.header-content h1 {
+    color: #ef5f5f;
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: jazeera;
+}
+.header-content h1 span {
+    font-size: 40px;
+    color:#43afef;
+}
+.header-content p {
+    font-size: 25px;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: jazeera;
+}
+.header-content a .btn-info {
+    padding: 10px 50px;
+    font-size: 15px;
+    background: #43afef;
+    border: 0;
+}
+.header-content a .btn-info:hover,.about .btn-info:hover,.lg-6 .btn-info:hover,.lg-4 .btn-info:hover {
+   background:#ef5f5f;
+}
+/* عن رقمية */
+.about {
+    padding: 100px 0!important;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Droid Arabic Kufi';
+}
+.about h2,.services h2,.blog h2 {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: jazeera;
+}
+.about h2 span,.services h2 span,.blog h2 span {
+    color: #43afef;
+    font-size: 35px;
+}
+.about p {
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-family: jazeera;
+}
+.about .btn-info {
+    float: right;
+    border: 0;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+/* التسجيل */
+.register {
+    background: #eee;
+    font-family: jazeera;
+    text-align: center;
+    height: 295px;
+    overflow: hidden;
+}
+.register h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.register .right {
+    padding: 85px 0;
+    background: url(./img/bk.png);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.register .right::after {
+    content: "";
+    border-left: 155px solid #f1f0f0;
+    border-bottom: 326px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.register .btn-info.lg {
+    border: 0;
+    background: #666;
+}
+.register .btn-info {
+    border: 0;
+}
+/* الخدمات */
+.services {
+    text-align: center;
+    font-family: 'Droid Arabic Kufi';
+    padding: 70px;
+    overflow: hidden;
+}
+.services img {
+    padding: 20px;
+}
+.services p,.blog p {
+    font-family: jazeera;
+    color: #666;
+    text-align: center;
+}
+.item {
+    width: 56px;
+    float: right;
+    background-color: #43afef;
+    height: 300px;
+    line-height: 200px;
+    cursor: pointer;
+    border-right: 1px solid #eee;
+    color: #fff;
+    border-radius: 5px;
+    display: inline;
+    overflow: hidden;
+}
+
+.info {
+    float:right;
+    background-color: #eee;
+    height: 300px;
+    border-radius: 5px 5px 5px 5px;
+    width:0;
+    display:none
+}
+*
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.item h2 {
+    display: block;
+    float: right;
+    white-space: nowrap;
+    position: absolute;
+    transform-origin: 0 50% 0;
+    transform: rotate(90deg) translate(-56px, 0px);
+    width: 300px;
+    cursor: pointer;
+    height: 10%;
+    color: #fff;
+    font-family: jazeera;
+}
+.info .col-md-5 {
+    padding: 50px;
+    text-align: right;
+    color: #666;
+    font-family: jazeera;
+}
+.info .col-md-5 h2 {
+    font-size: 25px;
+}
+.info .col-md-5 .wordpress,.info .col-md-5 .html,.info .col-md-5 .blogger {
+    font-size: 15px;
+}
+.info .col-md-5 h1 {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.lap img {
+    width: 300px;
+}
+.lap {
+    float: left;
+    width: 40%;
+}
+.marketing {
+    margin: 30px 0;
+}
+.accordion {
+    width: 100%;
+    margin: 10px;
+    display: none;
+}
+.accordion-row {
+    background: #eee;
+    margin-bottom: 10px;
+    margin: 20px;
+    display: none;
+    font-family: jazeera;
+    text-align: right;
+}
+.heading-trigger {
+    position: relative;
+    display: block;
+    font-size: 25px;
+    text-align: right;
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: #43afef;
+    color: #fff;
+    border-radius: 2px;
+}
+.heading-trigger:hover {
+    text-decoration: none;
+}
+.heading-trigger .glyphicon-plus {
+    float: left;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.accordion-row-content {
+    display: none;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+.accordion-row-content p {
+    text-align: right;
+    padding: 10px;
+}
+.accordion-row-content .title {
+    font-size: 25px;
+    color: #666;
+}
+.accordion-row-content h2 {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.wordpress,.html,.blogger,.face {
+    color: #555;
+    font-size: 16px;
+}
+/* العداد */
+.image-count {
+    font-family: jazeera;
+    padding: 50px 0;
+    background: url(./img/bk.png);
+    color: #fff;
+    overflow: hidden;
+}
+.image-count h2 {
+    color: #666;
+    font-size: 17px;
+}
+.image-count h2 span {
+    color: #fff;
+    font-size: 35px;
+}
+
+.count1 {
+    margin:50px auto;
+    font-size:25px;
+    text-align:center;
+    font-family:jazeera;
+}
+
+.count1 span {
+    display:block;
+    margin-bottom:10px
+}
+.count-to {
+    float: right;
+    width: 25%;
+}
+.count-to .fa {
+    font-size: 35px;
+    margin: 15px 10px;
+}
+/* المدونة */
+.blog {
+    font-family: jazeera;
+    padding: 50px 0;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 2px solid #43afef;
+}
+.blog h2 {
+    margin-bottom: 20px;
+}
+.post {
+    width: 32%;
+    float: right;
+    background: #fff;
+    margin-right: 1%;
+    display: block;
+}
+.post:hover,.contact-us #form:hover,#submit:hover,.about .btn-info:hover,.header-content a .btn-info:hover {
+    -moz-box-shadow: 0 10px 35px 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 10px 35px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 35px 5px rgba(0,0,0,0.2);
+    transform: translateY(-8px)!important;
+}
+.blog p {
+    margin-bottom: 30px;
+}
+.post-img {
+    width: 100%;
+    height: 200px;
+}
+.post-img img {
+    width: 100%;
+    height: 100%;
+}
+.post-title {
+    font-size: 15px;
+    text-align: right;
+    margin: 5px 0;
+    padding: 10px;
+    text-decoration: none;
+}
+.post-title a:hover,.more-link:hover {
+    text-decoration: none;
+}
+.post-p {
+    text-align: right;
+    font-size: 12px;
+    margin: 0 10px 0 15px;
+    color: #666;
+}
+.more-link {
+    padding: 8px 10px;
+    float: left;
+    background: #43afef;
+    color: #fff;
+    border-radius: 2px;
+    margin: 10px 10px;
+}
+.wpb_wrapper p {
+    margin-bottom: 10px;
+}
+/* تواصل معنا */
+.contact-us {
+    font-family: jazeera;
+    padding: 50px 0;
+    background: url(./img/bk.png);
+    color: #fff;
+    overflow: hidden;
+}
+.contact-us h2 {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+.contact-us h2 span {
+    color: #666;
+    font-size: 17px;
+}
+.cont_div {
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: right;
+}
+.cont_div .icon_box {
+    display: inline-block;
+    font-size: 26px;
+    float: right;
+    color: #43afef;
+    width: 40px;
+    border-radius: 50px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.cont_div .text_box {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    width: 90%;
+    padding: 25px 10px 0 0;
+}
+.cont_div .text_box h3 {
+    color: #fafafa;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    text-align: right;
+    direction: rtl;
+}
+.contact-us #form {
+    background: #fff;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+.contact {
+    margin: 100px 0;
+}
+#submit {
+    background: #43afef;
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 2px;
+}
+.contact-us #form .input-lg {
+    font-size: 16px;
+}
+/* الحقوق */
+.copyrights {
+    background: #43afef;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-family: jazeera;
+    display: block;
+}
+.copyrights a {
+    color: #eee;
+}
+/* التجاوب مع الأجهزة */
+
+@media screen and (max-width : 1280px) {
+.container {width:95%;}
+.boxs {display: none;}
+.accordion,.accordion-row {display: block;}
+}
+
+@media screen and (max-width : 1000px) {
+.container {width:95%;}
+.open-menu {display: block;cursor: pointer;float: right;line-height: 40px;padding: 0 15px;margin-top: 4px;border: 1px solid #eee;background: #fff;margin-right: 10px;font-size: 20px;}
+#navbar-main .open-menu {color: #43afef;}
+.navbar-left {float: left!important;clear: both;display: none;background: #43afef;margin: 0 11px;}
+#navbar-main li {width: 100%;text-align: right;}
+#navbar-main {position: absolute;left: 0;top: 18%;z-index: 999999992;width: 50%;}
+.accordion {padding-right: 80px;}
+}
+
+@media screen and (max-width : 768px) {
+.container {width:95%;}
+.container {float: left;}
+.top {min-height: 40px;}
+.Info {height: 90px;}
+.register .right {height: 295px;}
+.count-to {width: 50%;}
+.post {width: 100%;}
+.post-img {height: 250px;}
+.copyrights .container {width: 768px;padding-left: 0;padding-right: 0;}
+}
+
+@media screen and (max-width : 480px) {
+.container {width:97%;}
+.accordion {padding-right: 0;}
+.services img {width: 350px;}
+.accordion-row {margin: 0;}
+.cont_div .text_box {width: 89%;}
+}
+@media screen and (max-width : 320px) {
+.container {width:95%;}
+.email h3 {font-size: 12px;}
+#navbar-main {width: 25%;}
+.register h2 {text-align: right;}
+.register p {text-align: right;font-size: 11px;}
+.register .btn-info {float: right;}
+.services img {padding-right: 80px;}
+.accordion {width: 175%;}
+.heading-trigger,.accordion-row-content .title {font-size: 16px;}
+.accordion-row-content h2 {font-size: 13px;}
+.wordpress,.html,.blogger,.face {font-size: 11px;}
+.post-img {height: 200px;}
+.cont_div .text_box {width: 82%;}
+}

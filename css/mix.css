@@ -1,0 +1,531 @@
+/*
+ * Droid Arabic Kufi (Arabic) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family:jazeera;
+    src:url(../font/Al-Jazeera-Arabic-Bold.ttf) format("truetype");
+}
+html,
+body {
+  margin: 0;
+  color: #333;
+  background: #fff;
+  font: sans-serif;
+}
+* {
+    margin:0;
+    padding:0;
+}
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;-moz-transition: all .3s;}
+
+/* الهيدر  */
+
+header {
+    font-family: jazeera,poppins;
+}
+.top {
+    background: #eee;
+    min-height: 36px;
+}
+.email h3 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 25px;
+    color: #666;
+}
+.email {
+    float: left;
+}
+.top .col-sm-6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    text-align: right;
+}
+.top ul.social {
+    display: inline-block;
+    margin: 0;
+}
+.top ul.social li {
+    padding: 0!important;
+}
+.top ul.social a,.personal li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    position: relative;
+    color: #fff;
+    background-color: #43afef;
+    border-radius: 2px 2px 2px 2px;
+    overflow: hidden;
+    text-align: center;
+	font-weight: 100;
+}
+.Info {
+    text-align: left;
+    padding: 20px 0;
+}
+.Info .container>div {
+    display: inline-block;
+    margin-left: 50px;
+    text-align: left;
+    font-family: jazeera;
+}
+.Info .container>div>div {
+    display: inline-block;
+}
+.Info .container>div h3 {
+    font-size: 23px;
+    margin-top: 0;
+}
+.Info .container>div p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 12px!important;
+}
+.open-menu {
+    display: none;
+}
+nav {
+    height: 70px;
+    line-height: 70px;
+    background: #43afef;
+    z-index: 9991;
+    position: relative;
+    padding: 0;
+    border-bottom: none!important;
+}
+.logo {
+    float: right;
+}
+nav .logo img {
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+    width: 190px;
+}
+#navbar-main li {
+    float: right;
+}
+#navbar-main a {
+    line-height: 40px;
+    color: #fff;
+    font-family: jazeera;
+}
+#navbar-main a:hover {
+    color: #43afef;
+    background: #fff;
+}
+nav.isFixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+/* المقالات  */ 
+.posts {
+    margin: -20px 0;
+    text-align: center;
+}
+.post-sing {
+    padding: 20px;
+    text-align: right;
+    max-width: 900px;
+    margin: auto;
+    font-family: jazeera;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.post img {
+    width: 860px;
+    padding: 10px;
+}
+.post-img img {
+    position: relative;
+    width: 100%;
+}
+.post-single {
+    background: #43afef;
+    padding: 80px;
+    font-family: jazeera;
+}
+.post-single a {
+    color: #fff;
+    font-size: 25px;
+}
+.post-single a:hover {
+    text-decoration:none;
+    color: #eee;
+}
+.post-info {
+    padding: 30px;
+    color: #fff;
+}
+.post-info span {
+    margin: 0 10px;
+    padding: 5px 0;
+}
+.post-info span i {
+    font-size: 20px;
+}
+.post-info span i h4 {
+    font-family: jazeera;
+    font-size: 15px;
+}
+/*  الفريق  */
+.team,.about,.register,.login,.user-page {
+    font-family: jazeera,poppins;
+    padding: 50px 0;
+    text-align: center;
+}
+.team h2,.about h2,.register h2,.login h2 {
+    color: #666;
+    margin-bottom: 20px;
+}
+.team h2 span,.about h2 span,.register h2 span,.login h2 span {
+    color: #43afef;
+}
+.team p {
+    font-family: jazeera;
+    color: #666;
+    text-align: center;
+}
+.personal {
+    padding: 15px;
+    overflow: hidden;
+    background: #eee;
+    margin: 40px 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 32%;
+    float: right;
+}
+.personal:hover,#registerform:hover,#submit:hover,#loginform:hover,#login:hover {
+        -moz-box-shadow: 0 10px 35px 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 10px 35px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 35px 5px rgba(0,0,0,0.2);
+    transform: translateY(-8px)!important;
+}
+.cover {
+    background: url(../img/bk.png);
+    height: 130px;
+    border-radius: 10px 10px 0 0;
+}
+.user {
+    margin: -90px 90px;
+    border-radius: 50%;
+}
+.personal .user img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.personal h2 {
+    padding: 10px;
+    font-size: 20px;
+    margin: 100px 0 0 0;
+}
+
+/* صفحة عن رقمية */
+.about {
+    border: 1px solid #eee;
+    margin: 20px;
+}
+.about h2 {
+    margin-bottom: 40px;
+}
+.accordion {
+    width: 100%;
+    margin: 10px;
+}
+.accordion-row {
+    background: #eee;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+.heading-trigger {
+    position: relative;
+    display: block;
+    font-size: 25px;
+    text-align: right;
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.heading-trigger:hover {
+    text-decoration: none;
+}
+.heading-trigger .glyphicon-plus {
+    float: left;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.accordion-row-content {
+    display: none;
+}
+.accordion-row-content p {
+    text-align: right;
+    padding: 10px;
+}
+
+/* register */
+#registerform,#loginform {
+    background: #43afef;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 2px;
+}
+#registerform label,#loginform label {
+    color: #fff;
+    margin: 8px 0;
+}
+#registerform input,#loginform input {
+    border: 0;
+    width: 100%;
+    padding: 5px;
+}
+#registerform #password_info {
+    color: #eee;
+    margin: 10px 0;
+}
+#registerform #submit {
+    margin: 10px 0;
+    background: #eee;
+    color: #666;
+}
+#reset {
+    display: none;
+}
+.info-text-success,.user-page .already-logged,#Standard-Form,.login .already-logged,.register .already-logged,.user-page #already-logged {
+    background: #43afef;
+    color: #fff;
+    max-width: 400px;
+    padding: 20px;
+    margin: 150px auto;
+}
+#loginform .forgot-password {
+    margin-top: -15px;
+    color: #eee;
+    margin-bottom: 10px;
+}
+#loginform #login {
+    margin-bottom: 10px;
+}
+#loginform .UPB-forgot-pass {
+    color: #eee;
+}
+/* بروفايل */
+.user-page {
+    text-align: left;
+    max-width: 1170px;
+    margin: 105px auto;
+}
+.user-page .img-box {
+    background: #eee;
+    float: left;
+    padding: 10px;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 45px;
+}
+.user-page .img-box img {
+    width: 100%;
+    height: 100%;
+}
+.user-page .change_profile_image {
+    background: #43afef;
+    margin: 15px 0;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    border: 2px;
+}
+.user-page .change_profile_image a {
+   color: #fff;
+}
+.user-page .right-box {
+    float: right;
+}
+.user-page .right-box h3 {
+    color: #666;
+    font-size: 22px;
+}
+.user-page .left-box  {
+    float: left;
+    margin: 0 10px;
+}
+.user-page .left-box .user-name-info {
+    background: #43afef;
+    margin-bottom: 1px;
+    padding: 5px;
+    color: #fff;
+    border: 2px;
+}
+.user-page .profile-about-me {
+    float: left;
+    margin: 0 10px;
+    background: #43afef;
+    padding: 5px;
+    padding-bottom: 10px;
+    color: #fff;
+    border-radius: 2px;
+}
+.user-page .UPB-Button-input.right {
+    float: left;
+    margin: 5px 0;
+}
+.user-page .UPB-Button-input.right .UPB-Button {
+    background: #43afef;
+    padding: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+.UPB-Standard-form-second-tittle {
+    color: #666;
+}
+#top-entry-header {
+    margin-bottom: 5px;
+}
+.input-box input {
+    width: 25%;
+    padding: 5px;
+}
+.input-box #description {
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#EPSubmit {
+    background: #43afef;
+    border: 0;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 2px;
+    width: 25%;
+}
+.user-page #UPB-Standard-Form-entry-content {
+    margin: 50px 0;
+}
+#avatar_remove {
+    margin-top: 10px;
+    background: #e03232;
+    border: 0;
+    color: #fff;
+    padding: 5px;
+    width: 25%;
+    border-radius: 2px;
+}
+#PRSubmit {
+    background: #fff;
+    border: 0;
+    color: #43afef;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+.input-box #user_login {
+    border: 0;
+    width: 100%;
+    margin: 5px 0;
+}
+#UPB-Standard {
+    background: #43afef;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 2px;
+    padding: 20px;
+}
+/* الحقوق */ 
+.copyrights {
+    background: #43afef;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-family: jazeera;
+    display: block;
+}
+.copyrights a {
+    color: #eee;
+}
+/* التجاوب مع الأجهزة */
+
+@media screen and (max-width : 1280px) {
+.container {width:95%;}
+
+}
+
+@media screen and (max-width : 1000px) {
+.container {width:95%;}
+.open-menu {display: block;cursor: pointer;float: right;line-height: 40px;padding: 0 15px;margin-top: 4px;border: 1px solid #eee;background: #fff;margin-right: 10px;font-size: 20px;}
+#navbar-main a {color: #43afef;}
+.navbar-left {float: left!important;clear: both;display: none;background: #ffffff;margin: 0 11px;}
+#navbar-main a:hover {background: #43afef;color: #fff;}
+#navbar-main li {width: 100%;text-align: right;}
+#navbar-main {position: absolute;left: 0;top: 18%;z-index: 999999992;width: 50%;}
+.personal {width: 48%;}
+}
+
+@media screen and (max-width : 768px) {
+.container {width:95%;}
+.container {float: left;}
+.top {min-height: 40px;}
+.Info {height: 90px;}
+.copyrights {padding: 0;}
+.user-page .profile-about-me {margin-bottom: 15px;}
+.user-page .UPB-Button-input.right {margin: 10px 0;}
+.input-box input,.input-box #description,#EPSubmit { width: 100%;}
+#EPSubmit {margin-bottom: 10px;}
+.user-page #UPB-Standard-Form-entry-content {margin: 20px 0;}
+}
+
+@media screen and (max-width : 670px) { 
+.personal {width: 100%;}
+
+}
+@media screen and (max-width : 480px) {
+.container {width:97%;}
+.post-single a {font-size: 18px;}
+.heading-trigger {font-size: 20px;}
+}
+@media screen and (max-width : 320px) {
+.container {width:95%;}
+.email h3 {font-size: 12px;}
+#navbar-main {width: 25%;}
+.post-single a {font-size: 15px;}
+.user {margin: -90px 40px;}
+}
